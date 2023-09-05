@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CentSense</string>
-    <string name="license">This application is licensed under GNU General Public License v3 (GPLv3).</string>
+    <string name="license">This application is licensed under GNU General Public License v3 (GPLv3).\nFeel free to share, fork and contribute at github.com/RubberDuck01/CentSense!</string>
     <string name="verInfo">v1.0 \/\/ Build: 210823.1</string>
     <string name="about">About CentSense</string>
     <string name="btnLetsGo">Let\'s go!</string>
@@ -22,10 +22,10 @@
     <string name="remainingBudget">Remaining in budget: 0 €</string>
     <string name="expensesTitle">My expenses</string>
     <string name="currentExpenses">Total spent: 0 €</string>
-    <string name="noExpensesFound">You don\t have any expenses!</string>
+    <string name="noExpensesFound">You don\'t have any expenses!</string>
     <string name="budgetTitle">My budget</string>
     <string name="totalBudget">My total budget: 0 €</string>
-    <string name="noBudgetFound">You don\t have any budgets!</string>
+    <string name="noBudgetFound">You don\'t have any budgets!</string>
     <string name="addBudgetTitle">Adding new budget</string>
     <string name="txtAddBudgetName">Name:</string>
     <string name="tfAddBudgetName">Specify the name of the budget</string>

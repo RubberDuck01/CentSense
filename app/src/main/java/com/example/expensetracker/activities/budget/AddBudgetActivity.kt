@@ -53,8 +53,8 @@ class AddBudgetActivity : AppCompatActivity() {
 
         if (intent.extras != null){
             budgetModel = intent.getSerializableExtra("data") as BudgetModel?
-            tvLabel?.text = "Update Budget"
-            button_save?.text = "Update"
+            tvLabel?.text = "Edit budget"
+            button_save?.text = "Save changes"
             edittext_budget_name?.setText(budgetModel?.name)
             edittext_budget_amount?.setText(budgetModel?.amount.toString())
             cvDelete?.visibility = View.VISIBLE

@@ -60,8 +60,8 @@ class AddExpenseActivity : AppCompatActivity() {
 
         if (intent.extras != null){
             expenseModel = intent.getSerializableExtra("data") as ExpenseModel?
-            tvLabel?.text = "Update Expense"
-            button_save?.text = "Update"
+            tvLabel?.text = "Edit expense"
+            button_save?.text = "Save changes"
             edittext_expense_name?.setText(expenseModel?.name)
             edittext_expense_amount?.setText(expenseModel?.amount.toString())
             cvDelete?.visibility = View.VISIBLE

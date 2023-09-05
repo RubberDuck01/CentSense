@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                     HelperClass.userModel?.id!!.toLong()
                 )
             runOnUiThread {
-                text_remaining_budget!!.text = "Remaining in budget: $remainingBudget €"
+                text_remaining_budget!!.text = "My current budget: $remainingBudget €"
             }
         }
     }
