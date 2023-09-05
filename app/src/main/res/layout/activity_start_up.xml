@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
             android:gravity="center"
-            android:text="Master Your Finances, Effortlessly."
+            android:text="@string/app_moto"
             android:textSize="18sp" />
 
         <!-- Get Started Button -->
@@ -66,7 +66,7 @@
                 android:id="@+id/button_get_started"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get Started"
+                android:text="@string/btnLetsGo"
                 android:paddingHorizontal="20dp"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/button_color"/>

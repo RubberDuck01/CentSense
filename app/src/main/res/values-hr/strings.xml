@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Praćenje troškova</string>
+    <string name="app_name">CentSense</string>
+    <string name="license">This application is licensed under GNU General Public License v3 (GPLv3).</string>
+    <string name="verInfo">v1.0 // Build: 210823.1</string>
+    <string name="about">About CentSense</string>
+    <string name="btnLetsGo">Lets go!</string>
+    <string name="app_moto">Savings simplified - fun amplified!</string>
+    <string name="tfUser">Your username</string>
+    <string name="tfPass">Your password</string>
+    <string name="btnLogin">Sign in</string>
+    <string name="btnRegister">Register</string>
+    <string name="btnLoginReg">Already registered?</string>
+    <string name="btnRegisterReg">Register!</string>
+    <string name="tfUserReg">Enter desired username</string>
+    <string name="tfPassReg">Enter desired password</string>
+    <string name="txWelcome">Welcome to CentSense!</string>
+    <string name="txGreet">Hi, [Username]!</string>
+    <string name="btnBudget">My budget</string>
+    <string name="btnExpenses">My expenses</string>
+    <string name="btnLogout">Sign out</string>
+    <string name="btnAbout">About app</string>
+    <string name="remainingBudget">Remaining in budget: 0 €</string>
+    <string name="expensesTitle">My expenses</string>
+    <string name="currentExpenses">Total spent: 0 €</string>
+    <string name="noExpensesFound">You dont have any expenses!</string>
+    <string name="budgetTitle">My budget</string>
+    <string name="totalBudget">My total budget: 0 €</string>
+    <string name="noBudgetFound">You dont have any budgets!</string>
+    <string name="addBudgetTitle">Adding new budget</string>
+    <string name="txtAddBudgetName">Name:</string>
+    <string name="tfAddBudgetName">Specify the name of the budget</string>
+    <string name="txtAddBudgetAmount">Amount:</string>
+    <string name="tfAddBudgetAmount">Enter the desired amount (€)</string>
+    <string name="btnSaveNewBudget">Save</string>
+    <string name="addExpenseTitle">Adding new expense</string>
+    <string name="txtAddExpenseName">Name:</string>
+    <string name="tfAddExpenseName">Specify the name of the expense</string>
+    <string name="txtAddExpenseAmount">Amount:</string>
+    <string name="tfAddExpenseAmount">How much are you paying (€)?</string>
+    <string name="btnSaveNewExpense">Add</string>
 </resources>

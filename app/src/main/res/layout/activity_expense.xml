@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginHorizontal="60dp"
-            android:text="Expense"
+            android:text="@string/expensesTitle"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -56,7 +56,7 @@
                 android:layout_centerInParent="true"
                 android:paddingHorizontal="25dp"
                 android:paddingVertical="15dp"
-                android:text="Your current expenses: $0"
+                android:text="@string/currentExpenses"
                 android:textColor="@color/button_color"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -82,7 +82,7 @@
                 android:layout_centerInParent="true"
                 android:paddingHorizontal="25dp"
                 android:paddingVertical="15dp"
-                android:text="Your remaining budget: $0"
+                android:text="@string/remainingBudget"
                 android:textColor="@color/button_color"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -100,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="No Expense Found"
+            android:text="@string/noExpensesFound"
             android:textColor="@color/button_color"
             android:textSize="16sp"
             android:textStyle="bold" />

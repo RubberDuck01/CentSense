@@ -47,7 +47,7 @@
                 android:id="@+id/edittext_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Username"
+                android:hint="@string/tfUser"
                 android:textColorHint="@color/button_color"
                 android:textColor="@color/button_color"
                 android:padding="16dp"
@@ -70,7 +70,7 @@
                 android:id="@+id/edittext_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/tfPass"
                 android:background="@color/white"
                 android:textColorHint="@color/button_color"
                 android:textColor="@color/button_color"
@@ -94,7 +94,7 @@
                 android:id="@+id/button_login"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="@string/btnLogin"
                 android:paddingHorizontal="40dp"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/button_color"/>
@@ -117,7 +117,7 @@
                 android:id="@+id/button_register"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="@string/btnRegister"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/button_color"/>
 
