@@ -43,9 +43,9 @@ class RegisterActivity : AppCompatActivity() {
             userName = edittext_username?.text.toString()
             password = edittext_password?.text.toString()
             if (userName!!.isEmpty()) {
-                showToast("Please enter username")
+                showToast("Username is required!")
             } else if (password!!.isEmpty()) {
-                showToast("Please enter password")
+                showToast("Password is required!")
             } else {
                 val userModel = UserModel(
                     name = userName!!,
@@ -53,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
                 GlobalScope.launch(Dispatchers.IO) {
                     databaseDao.registerUser(userModel)
                 }
-                showToast("Registered Successfully")
+                showToast("You're now registered. Proceed to login.")
                 finish()
             }
         }

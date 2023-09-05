@@ -72,7 +72,7 @@ class BudgetActivity : AppCompatActivity() {
             list = databaseDao.getAllBudgets(HelperClass.userModel?.id?.toLong()!!)
             runOnUiThread {
                 textview_budget!!.text =
-                    "Your total budget: $$getTotalBudget"
+                    "Your total budget: $getTotalBudget €"
                 amountAdapter = BudgetAdapter(this@BudgetActivity, list!!)
                 recyclerView_budget!!.layoutManager = LinearLayoutManager(this@BudgetActivity)
                 recyclerView_budget!!.adapter = amountAdapter

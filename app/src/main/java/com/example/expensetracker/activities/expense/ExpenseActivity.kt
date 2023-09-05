@@ -77,8 +77,8 @@ class ExpenseActivity : AppCompatActivity() {
             runOnUiThread {
 
                 remainingBudget = getTotalBudget-getTotalExpense
-                textview_expense!!.text = "Your current expenses: $$getTotalExpense"
-                textview_budget!!.text = "Your remaining budget: $$remainingBudget"
+                textview_expense!!.text = "My current expenses: $getTotalExpense €"
+                textview_budget!!.text = "My current budget: $remainingBudget €"
                 expenseAdapter = ExpenseAdapter(this@ExpenseActivity, list!!)
                 recyclerView_expense!!.layoutManager = LinearLayoutManager(this@ExpenseActivity)
                 recyclerView_expense!!.adapter = expenseAdapter

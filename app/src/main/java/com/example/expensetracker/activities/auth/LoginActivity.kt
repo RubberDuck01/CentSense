@@ -55,16 +55,16 @@ class LoginActivity : AppCompatActivity() {
             userName = edittext_username?.text.toString()
             password = edittext_password?.text.toString()
             if (userName!!.isEmpty()) {
-                showToast("Please enter username")
+                showToast("Username and/or password fields cannot be empty!")
             } else if (password!!.isEmpty()) {
-                showToast("Please enter password")
+                showToast("Username and/or password fields cannot be empty!")
             } else {
                 GlobalScope.launch(Dispatchers.IO) {
                     userModelList = databaseDao.getUsersFromDB()
                     for (users in userModelList) {
                         if (userName == users.name && password == users.password) {
                             runOnUiThread {
-                            showToast("Login Successfully")
+                            showToast("You are now logged in.")
                             HelperClass.userModel = users
                             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                             finish()
@@ -73,7 +73,7 @@ class LoginActivity : AppCompatActivity() {
                         }
                     }
                     runOnUiThread {
-                        showToast("Please check username or password")
+                        showToast("Username and/or password are incorrect. Try again.")
                     }
                 }
 

@@ -60,7 +60,7 @@ class AddExpenseActivity : AppCompatActivity() {
 
         if (intent.extras != null){
             expenseModel = intent.getSerializableExtra("data") as ExpenseModel?
-            tvLabel?.text = "Update Budget"
+            tvLabel?.text = "Update Expense"
             button_save?.text = "Update"
             edittext_expense_name?.setText(expenseModel?.name)
             edittext_expense_amount?.setText(expenseModel?.amount.toString())
@@ -69,7 +69,7 @@ class AddExpenseActivity : AppCompatActivity() {
                 GlobalScope.launch(Dispatchers.IO) {
                     databaseDao.deleteExpense(expenseModel!!)
                     runOnUiThread {
-                        showToast("Deleted Successfully")
+                        showToast("Expense has been deleted.")
                         finish()
                     }
                 }
@@ -83,9 +83,9 @@ class AddExpenseActivity : AppCompatActivity() {
             runOnUiThread{
                 if (expenseModel != null){
                     val updatedBudget =   remainingBudget+expenseModel?.amount!!
-                    textview_budget?.text = "Your remaining budget: $$updatedBudget"
+                    textview_budget?.text = "My budget: $updatedBudget €"
                 }else{
-                    textview_budget?.text = "Your remaining budget: $$remainingBudget"
+                    textview_budget?.text = "My budget: $remainingBudget €"
                 }
             }
         }
@@ -99,9 +99,9 @@ class AddExpenseActivity : AppCompatActivity() {
             name = edittext_expense_name?.text.toString()
             amount = edittext_expense_amount?.text.toString()
             if (name!!.isEmpty()) {
-                showToast("Please enter expense name")
+                showToast("Expense name cannot be empty!")
             } else if (amount!!.isEmpty()) {
-                showToast("Please enter expense amount")
+                showToast("Expense amount cannot be empty!")
             } else {
                 if (remainingBudget > 0) {
 
@@ -112,12 +112,12 @@ class AddExpenseActivity : AppCompatActivity() {
                             GlobalScope.launch(Dispatchers.IO) {
                                 databaseDao.updateExpense(expenseModel!!)
                                 runOnUiThread {
-                                    showToast("Successfully Updated")
+                                    showToast("Expense has been updated!")
                                     finish()
                                 }
                             }
                         } else {
-                            showToast("Expense should not be greater than remaining budget")
+                            showToast("Expense should not be greater than remaining budget!")
                         }
 
                     }else{
@@ -131,16 +131,16 @@ class AddExpenseActivity : AppCompatActivity() {
                             GlobalScope.launch(Dispatchers.IO) {
                                 databaseDao.addExpense(amountModel)
                                 runOnUiThread {
-                                    showToast("Successfully Added")
+                                    showToast("You've added a new expense!")
                                     finish()
                                 }
                             }
                         } else {
-                            showToast("Expense should not be greater than remaining budget")
+                            showToast("Expense should not be greater than remaining budget!")
                         }
                     }
                 } else {
-                    showToast("Please add the budget before expense")
+                    showToast("You must enter budget prior to expense!")
                 }
             }
         }

@@ -62,7 +62,7 @@ class AddBudgetActivity : AppCompatActivity() {
                 GlobalScope.launch(Dispatchers.IO) {
                     databaseDao.deleteBudget(budgetModel!!)
                     runOnUiThread {
-                        showToast("Deleted Successfully")
+                        showToast("Budget has been deleted.")
                         finish()
                     }
                 }
@@ -78,9 +78,9 @@ class AddBudgetActivity : AppCompatActivity() {
             name = edittext_budget_name?.text.toString()
             amount = edittext_budget_amount?.text.toString()
             if (name!!.isEmpty()) {
-                showToast("Please enter budget name")
+                showToast("Budget name cannot be empty!")
             } else if (amount!!.isEmpty()) {
-                showToast("Please enter budget amount")
+                showToast("Budget amount cannot be empty!")
             } else {
                 if (amount!!.toLong() > 0) {
 
@@ -90,7 +90,7 @@ class AddBudgetActivity : AppCompatActivity() {
                         GlobalScope.launch(Dispatchers.IO) {
                             databaseDao.updateBudget(budgetModel!!)
                         }
-                        showToast("Successfully Updated")
+                        showToast("Budget has been updated!")
                     }else{
                         val amountModel = BudgetModel(
                             name = name!!,
@@ -100,11 +100,11 @@ class AddBudgetActivity : AppCompatActivity() {
                         GlobalScope.launch(Dispatchers.IO) {
                             databaseDao.addBudget(amountModel)
                         }
-                        showToast("Successfully Added")
+                        showToast("You've added new budget!")
                     }
                     finish()
                 } else {
-                    showToast("Amount should be greater than 0")
+                    showToast("Budget amount should be > 0.")
                 }
             }
         }
