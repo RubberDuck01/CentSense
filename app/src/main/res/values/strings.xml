@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CentSense</string>
     <string name="license">This application is licensed under GNU General Public License v3 (GPLv3).</string>
-    <string name="verInfo">v1.0 // Build: 210823.1</string>
+    <string name="verInfo">v1.0 \/\/ Build: 210823.1</string>
     <string name="about">About CentSense</string>
     <string name="btnLetsGo">Let\'s go!</string>
     <string name="app_moto">Savings simplified - fun amplified!</string>

@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         databaseInstance = DatabaseInstance.getDatabase(this)
         databaseDao = databaseInstance.databaseDao()
 
-        text_greeting?.text = "Hello, " + HelperClass.userModel?.name + "!"
+        text_greeting?.text = "Hi, " + HelperClass.userModel?.name + "!"
         button_budget?.setOnClickListener(View.OnClickListener {
             startActivity(
                 Intent(
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                     HelperClass.userModel?.id!!.toLong()
                 )
             runOnUiThread {
-                text_remaining_budget!!.text = "Remaining Budget: $$remainingBudget"
+                text_remaining_budget!!.text = "Remaining in budget: $remainingBudget €"
             }
         }
     }

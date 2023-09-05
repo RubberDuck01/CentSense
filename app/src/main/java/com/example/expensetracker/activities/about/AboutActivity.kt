@@ -29,7 +29,7 @@ class AboutActivity : AppCompatActivity() {
             finish()
         }
 
-        text_app_version?.text = "Version ${getAppVersion()}"
+        text_app_version?.text = "v${getAppVersion()} // Build: 210823"
 
     }
 
