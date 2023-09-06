@@ -76,7 +76,6 @@ class LoginActivity : AppCompatActivity() {
                         showToast("Username and/or password are incorrect. Try again.")
                     }
                 }
-
             }
         }
     }
